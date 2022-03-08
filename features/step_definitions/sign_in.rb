@@ -28,10 +28,10 @@ And(/^I click 'Login' button$/) do
   @login_page.submit_btn.click
 end
 
-Then(/^I become a logged in user$/) do
-  expect(page).to have_content 'Logged in as user'
+Then(/^I become a logged in as "([^"]*)"$/) do |user_name|
+  expect(page).to have_content "Logged in as #{user_name}"
 end
 
-Given(/^I am logged in user$/) do
-  login_admin
+Given(/^I am logged in as "([^"]*)"$/) do |user_name|
+  login_user user_name, 'qwerty123'
 end

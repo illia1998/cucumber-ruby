@@ -4,5 +4,5 @@ Feature: Sign in
   In order to become a user
 
   Scenario: Sign in positive flow
-    Given I am logged in user
-    Then I become a logged in user
+    Given I am logged in as "testuser123"
+    Then I become a logged in as "testuser123"
