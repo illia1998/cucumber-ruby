@@ -35,3 +35,4 @@ end
 Given(/^I am logged in as "([^"]*)"$/) do |user_name|
   login_user user_name, 'qwerty123'
 end
+

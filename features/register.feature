@@ -1,3 +1,4 @@
+@register
 Feature: Register
   As a visitor
   I want to be able to register

@@ -7,5 +7,30 @@ module FeatureHelper
     login_page.password_field.set password
     login_page.submit_btn.click
   end
+
+  def set_login
+    @login = 'user' + Time.now.to_i.to_s
+  end
+
+  def get_login
+    @login
+  end
+
+  def set_password
+    @password = '123' + Time.now.to_i.to_s
+  end
+
+  def get_password
+    @password
+  end
+
+  def set_email
+    @email = Time.now.to_i.to_s + '@test.com'
+  end
+
+  def get_email
+    @email
+  end
 end
+
 

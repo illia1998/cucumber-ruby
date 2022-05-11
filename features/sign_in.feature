@@ -1,3 +1,4 @@
+@sign_in
 Feature: Sign in
   As a visitor
   I want to be able to sign in

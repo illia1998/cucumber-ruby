@@ -13,9 +13,9 @@ Then(/^I see 'Register' form opened$/) do
 end
 
 When(/^I fill in 'Register' form with valid credentials$/) do
-  @login = 'user' + Time.now.to_i.to_s
-  @password = '123' + Time.now.to_i.to_s
-  @email = Time.now.to_i.to_s + '@test.com'
+  # @login = 'user' + Time.now.to_i.to_s
+  # @password = '123' + Time.now.to_i.to_s
+  # @email = Time.now.to_i.to_s + '@test.com'
   @register_page = RegisterPage.new
   @register_page.login_field.set @login
   @register_page.password_field.set @password
@@ -25,7 +25,6 @@ When(/^I fill in 'Register' form with valid credentials$/) do
   @register_page.email_field.set @email
   @register_page.hide_email_cb.set(true)
   @register_page.language_drdn.select 'English'
-
 end
 
 And(/^I click 'Submit' button$/) do

@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
   gem 'capybara'
   gem 'cucumber'
+  gem 'rake'
+  gem 'rest-client'
   gem 'require_all'
   gem 'rspec-expectations'
   gem 'selenium-webdriver'
